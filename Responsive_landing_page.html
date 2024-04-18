@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOTEL RUCIRA</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        #navbar {
+            background-color: #333333;
+            padding: 15px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            transition: background-color 0.3s;
+        }
+
+        #navbar a {
+            color: rgb(159, 178, 232);
+            text-decoration: none;
+            padding: 15px;
+            margin: 0 10px;
+            transition: color 0.3s;
+        }
+
+        #navbar a:hover {
+            color: #591d95;
+        }
+
+        section {
+            padding: 60px 0;
+            height: 500px; /* just for demonstration */
+            text-align: center;
+        }
+
+        #home {
+            background-color: rgb(219, 78, 35);
+            color: rgb(24, 21, 1);
+            padding: 20px;
+        }
+
+        #home h1 {
+            color: orange;
+            text-align: center;
+        }
+
+        #services {
+            background-color: black;
+            color: white;
+            padding: 20px;
+        }
+
+        .food-item {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .food-item img {
+            width: 150px;
+            height: 150px;
+            border-radius: 8px;
+            margin-bottom: 10px;ss
+        }
+
+        .food-item div {
+            text-align: center;
+            width: 30%;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="navbar">
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <section id="home">
+        <h1 style="color: orange;"><hr><hr><b> RUCHIRA MUTTON KHANAVAL <img src="logo.jpeg" height="100"></b></h1><hr>
+        <p><h3 style="color: gold;">Welcome to Ruchira Mutton Khanaval!!</h3><br><b>A haven for lovers of authentic Maharashtrian cuisine! Our extensive menu boasts a delightful array of traditional Maharashtrian dishes that are sure to tantalize your taste buds.</b><br><h4>
+            Situated in a cozy space, Ruchira Mutton Khanaval ensures a warm and welcoming atmosphere. With ample parking available, finding a spot is a breeze, allowing you to relax and savor your culinary journey. The hospitality, while not overly premium, is reflective of the excellent value we provide for the cost of our food.</h4>
+</p>
+            <p><h4>At Ruchira Mutton Khanaval, we take pride in being a culinary destination that goes beyond just satisfying hunger – we aim to create an experience that lingers in your memory. Our commitment to maintaining the authenticity of Maharashtrian cultural food sets us apart, ensuring that every bite is a journey through the rich culinary heritage of Maharashtra. Whether you are a long-time fan of Maharashtrian cuisine or a newcomer eager to explore, our restaurant offers a delightful fusion of flavors that will leave you craving more.<br>
+
+                Our journey began with a vision to bring the essence of Maharashtra to every plate. Join us on this gastronomic adventure where passion, tradition, and flavor converge to create an unparalleled dining experience. Rucira Mutton Khanaval invites you to savor the taste of Maharashtra – a symphony of spices, textures, and aromas that will leave you coming back for more. </h4></p>
+    </section>
+
+    <section id="services">
+       <hr><hr><h2>Services Section</h2><hr><hr>
+        <div class="food-item">
+            <div>
+                <img src="chickenthali.jpeg" alt="Food 1">
+                <p>Chicken Thali</p>
+                <p>₹230.00</p>
+            </div>
+            <div>
+                <img src="muttonthali.jpeg" alt="Food 2">
+                <p>Mutton Thali</p>
+                <p>₹300.00</p>
+            </div>
+            <div>
+                <img src="maswadi.jpeg" alt="Food 3">
+                <p>Maswadi Thali</p>
+                <p>₹200.00</p>
+            </div>
+            
+    </section>
+
+    <section id="contact">
+        <h2>Contact Section</h2>
+        <p>Address:Kasari Phata , Pune-Nagar Road, Tal.Shirur , Dist.Pune , 412208.<br>
+            Contact:8625874711
+        </p>
+    </section>
+
+    <script>
+        window.addEventListener('scroll', function() {
+            var navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.style.backgroundColor = '#555';
+            } else {
+                navbar.style.backgroundColor = '#333';
+            }
+        });
+    </script>
+</body>
+</html>
